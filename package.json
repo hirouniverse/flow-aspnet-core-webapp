@@ -1,0 +1,21 @@
+{
+  "name": "FlowSampleApp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "flow": "flow",
+    "build": "flow && babel ./WebApplication/Scripts -d ./WebApplication/wwwroot/js/",
+    "msbuild": "flow && babel ./WebApplication/Scripts -d ./WebApplication/wwwroot/js/ && dotnet build FlowSampleApp.sln"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.10.3",
+    "@babel/core": "^7.10.3",
+    "@babel/preset-flow": "^7.10.1",
+    "flow-bin": "^0.127.0"
+  }
+}

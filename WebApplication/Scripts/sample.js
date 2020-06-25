@@ -1,0 +1,14 @@
+// @flow
+function square(n: number): number {
+  console.log(n);
+  return n * n;
+}
+
+square(2); // Error!
+
+function multiple(n: string): number {
+  console.log(n);
+  return Number(n);
+}
+
+multiple("23");

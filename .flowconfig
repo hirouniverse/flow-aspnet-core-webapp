@@ -1,0 +1,13 @@
+[ignore]
+<PROJECT_ROOT>/WebApplication/js/.*
+
+[include]
+./WebApplication/Scripts/.*
+
+[libs]
+
+[lints]
+
+[options]
+
+[strict]

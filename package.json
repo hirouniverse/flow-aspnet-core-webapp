@@ -5,9 +5,14 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "flow": "flow",
-    "build": "flow && babel ./WebApplication/Scripts -d ./WebApplication/wwwroot/js/",
+    "flow": "flow check",
+    "build": "flow check && babel ./WebApplication/Scripts -d ./WebApplication/wwwroot/js/",
     "msbuild": "flow && babel ./WebApplication/Scripts -d ./WebApplication/wwwroot/js/ && dotnet build FlowSampleApp.sln"
+  },
+  "-vs-binding": {
+    "BeforeBuild": [
+      "build"
+    ]
   },
   "keywords": [],
   "author": "",
